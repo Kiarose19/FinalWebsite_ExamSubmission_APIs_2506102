@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rotating Spaceship with Data Points</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Franklin&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/8d7dd1faf6.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+    <style>
+      body {
+        margin: 0;
+        overflow: hidden;
+      }
+      #spaceship {
+        position: absolute;
+        width: 5px;
+        height: 5px;
+        transition: transform 0.5s ease-in-out;
+      }
+
+      .data-point {
+        position: absolute;
+        width: 45px;
+        height: 45px;
+        background-color: rgb(185, 182, 182);
+        border-radius: 50%;
+        cursor: pointer;
+        border-radius: 2px black;
+        fill: url(#asteroid-gradient);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav id="navbar" class="sticky">
+        <script src="app.js"></script>
+        <label for="logo" class="logo">Space Things</label>
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="blogs.html">Blogs</a></li>
+          <li><a href="designs.html">Designs</a></li>
+          <li><a href="data-vis.html">Data Visualisations</a></li>
+          <li><a href="data-art.html">Data Art</a></li>
+          <li><a href="data-art-2.html">Data Art Two</a></li>
+        </ul>
+        <label id="icon">
+          <i class="fas fa-bars"></i>
+        </label>
+      </nav>
+    </header>
+    <div id="spaceship"><img src="Images/spaceship2.png" alt="" /></div>
+
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="script2.js"></script>
+
+    <section id="ship">
+      <p>
+        This data art is representative of the Nasa API "Asteroids NeoWs - Neo
+        Feed". The gray circles represent the asteroids and the spaceship is a
+        cute touch as it travels around these asteroids being represented.
+        Information about the asteroids appear in a tooltip when they are
+        hovered over.
+      </p>
+    </section>
+  </body>
+</html>
